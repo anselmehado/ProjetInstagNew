@@ -1,6 +1,6 @@
-// Place all the styles related to the posts controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+// // Place all the styles related to the posts controller here.
+// // They will automatically be included in application.css.
+// // You can use Sass (SCSS) here: http://sass-lang.com/
 
 body {
   // background-attachment: url("images/background.wepb")
@@ -10,58 +10,101 @@ body {
   background-size:cover;
   text-align: center;
 }
-
+//
 header {
-  width: 100%;
+
   background-color: #2c3e50;
   height: 54px;
   margin: 0
 }
-header ul {
-  margin: 0 auto;
-  list-style: none;
-}
-header ul a {
-  display: block;
-  padding: 15px;
-  text-decoration: none;
-  color: white;
-}
-header li {
-  float: left;
-  width: auto;
-}
-header ul:after {
-  content: "";
-  display: block;
-  clear: both;
-}
-
+// header ul {
+//   margin: 0 auto;
+//   list-style: none;
+// }
+// header ul a {
+//   display: block;
+//   padding: 15px;
+//   text-decoration: none;
+//   color: white;
+// }
 // header li {
-//   float: right;
+//   float: left;
 //   width: auto;
 // }
+// header ul:after {
+//   content: "";
+//   display: block;
+//   clear: both;
+// }
+//
+// // header li {
+// //   float: right;
+// //   width: auto;
+// // }
+//
+// #title{
+//   color:white;
+//   font-size: 50px;
+//   font-family: "robotto";
+//   font-style: oblique;
+// }
+//
+// .content{
+//   border-radius :20px;
+// }
+//
+//
+// footer {
+//   width: 100%;
+//   background-color:#2c3e50;
+//   padding: 20px 0 10px 0;
+//   color: white;
+//   margin: auto;
+//   padding-bottom: 10px;
+//   font-size: 12px;
+//   position: absolute;
+//   bottom: 0;
+// }
 
-#title{
-  color:white;
-  font-size: 50px;
-  font-family: "robotto";
-  font-style: oblique;
+
+
+//
+// body {
+//     font-family: "Trebuchet MS";
+// }
+.menu {
+    display: flex;                /* Transformation en flexbox */
+    padding:0;                    /* Suppression des marges internes */
+    background-color: #ccc;       /* Ajout de la couleur d'arrière-plan */
+    justify-content: space-around;/* Alignements des liens dans le menu */
 }
+.menu li {
+    list-style-type: none ;       /* Suppression des puces */
 
-.content{
-  border-radius :20px;
 }
+.menu a {
+    display:block;                /* Transformation en block */
+    min-width: 120px;             /* Largeur minimale des liens */
 
+    margin: 0.5rem;               /* Marges externes */
+    padding: 0.4rem 0;            /* Marges internes */
+    text-align: center;           /* Centrage du texte */
+    background-color: #1ABC9C;    /* Arrière-plan */
+    color: #fff;                  /* Couleur du texte */
+    text-decoration: none;        /* Suppression du soulignement */
+    border: 1px solid #fff;       /* Ajout d'une bordure */
+    border-radius: 4px;           /* Arrondis des bordures */
 
-footer {
-  width: 100%;
-  background-color:#2c3e50;
-  padding: 20px 0 10px 0;
-  color: white;
-  margin: auto;
-  padding-bottom: 10px;
-  font-size: 12px;
-  position: absolute;
-  bottom: 0;
+    transition: all 1s ;          /* Ajout des effets de transition */
+}
+.menu a.actif {
+    background-color: #000 ;
+    color: #1ABC9C ;
+    border-color: #1ABC9C ;
+}
+.menu a:hover,
+.menu a:hover.actif{
+    background-color: #ed2794;
+    color: #ffe843;
+    border-color: #ffe843;
 }
