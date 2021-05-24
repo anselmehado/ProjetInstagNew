@@ -1,0 +1,33 @@
+<div class="container_connexion">
+
+  <div class="row">
+      <div class="col-6"></div>
+      <%= form_with(scope: :session, url: sessions_path, local: true) do |f| %>
+
+        <div class="label_button">
+          <%= f.text_field :email, placeholder: "Entrer votre email" %><br><br>
+        </div>
+        <div class="labal_pass">
+          <%= f.password_field :password, placeholder: "votre mot de passe" %><br>
+        </div>
+
+        <div class="actions">
+          <%= f.submit 'Post', class: 'btn btn-primary'%>
+        </div>
+          <div class="button_connexion">
+              <%= f.submit "connexion"  %>
+          </div>
+
+
+        <%= link_to 'Log in', new_post_path %>
+
+  </div>
+
+<% end %>
+<div class="container">
+</div>
+<div class="test">
+  <h1>FaceBook clone </h1>
+</div>
+
+</div>

@@ -1,0 +1,28 @@
+<!-- <h1>Log in</h1> -->
+ <%= form_with(scope: :session, url: sessions_path, local: true) do |f| %>
+<center>
+
+  <div class="container connexion col-md-6">
+
+      <div class="connexion">
+        <div class="label_mail">
+          <input type="f.text" placeholder="Adresse e-mail">
+        </div>
+        <div class="label_pass">
+            <%= password_field_tag(:password, "", placeholder: "Password") %>
+
+            <input type="text" placeholder="password_field :password">
+            <%= f.password_field :password %>
+                <input type="text" placeholder="Entrer votre Email">
+
+        </div>
+        <div class="">
+          <%= f.submit "login in" %> <br>
+
+        </div>
+      </div>
+
+    </div>
+</center> <%= link_to 'Show', post %>
+
+ <% end %>
